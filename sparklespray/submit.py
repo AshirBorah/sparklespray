@@ -718,7 +718,7 @@ def submit_cmd(jq, io, cluster, args, config):
 
     if finished:
         txtui.user_print(
-            "Done waiting for job. You can download results via 'gsutil rsync -r {} DEST_DIR'".format(
+            "Done waiting for job. You can download results via 'gsutil -m rsync -r {} DEST_DIR'".format(
                 url_join(default_url_prefix, job_id)
             )
         )
